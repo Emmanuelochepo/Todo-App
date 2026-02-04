@@ -2,7 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: Tahoma, sans-serif;
+  font-family: monospace, sans-serif;
 }
 .container {
   display: flex;
@@ -12,6 +12,11 @@
   max-width: 100%;
   min-height: 100vh;
   background-image: linear-gradient(120deg, #e0c3fc 0%, #8ec5fc 100%);
+}
+.title {
+  border: 1px solid black;
+  border-radius: 100vmax;
+  padding: 0.5rem 2rem;
 }
 .title h1 {
   font-size: 4rem;
@@ -50,19 +55,27 @@
   width: 50%;
   background: #fff;
   border-radius: 10px;
-  padding: 1.3rem;
 }
-.todoList{
-    display: grid;
-    grid-template-columns: 7fr 1fr;
+.todoList {
+  display: grid;
+  grid-template-columns: 7fr 1fr;
+  list-style: none;
+  font-size: 18px;
+  padding: 1.2rem 0.9rem;
+  margin: 1rem;
+  background: #e0c3fc;
+  border-radius: 10px;
+  line-height: 25px;
 }
-.todoList li{
-    list-style: none;
-    font-size: 18px;
+.todoList button {
+  background: none;
+  outline: none;
+  border: none;
+  cursor: pointer;
 }
-#delete{
-    background: none;
-    outline: none;
-    border: none;
-    cursor: pointer;
+#delete {
+  background: none;
+  outline: none;
+  border: none;
+  cursor: pointer;
 }
